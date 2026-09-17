@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="576" viewBox="0 0 1280 576">
+  <rect width="1280" height="576" fill="#0b120f"/>
+  <text x="640" y="64" text-anchor="middle" fill="#8ed8a9" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="3">RELAY DEMO</text>
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(70 140)"><rect width="270" height="220" rx="18" fill="#18231f" stroke="#3a5047"/><text x="135" y="65" text-anchor="middle" fill="#f5f7f4" font-size="34" font-weight="700">Node A</text><text x="135" y="108" text-anchor="middle" fill="#8ed8a9" font-size="24">originates + signs</text><text x="135" y="158" text-anchor="middle" fill="#aeb8b0" font-size="21">then shuts down</text><line x1="72" y1="186" x2="198" y2="186" stroke="#ef8e88" stroke-width="5"/></g>
+    <g transform="translate(505 140)"><rect width="270" height="220" rx="18" fill="#18231f" stroke="#3a5047"/><text x="135" y="65" text-anchor="middle" fill="#f5f7f4" font-size="34" font-weight="700">Node B</text><text x="135" y="108" text-anchor="middle" fill="#8ed8a9" font-size="24">acquires + verifies</text><text x="135" y="158" text-anchor="middle" fill="#aeb8b0" font-size="21">becomes a source</text></g>
+    <g transform="translate(940 140)"><rect width="270" height="220" rx="18" fill="#18231f" stroke="#3a5047"/><text x="135" y="65" text-anchor="middle" fill="#f5f7f4" font-size="34" font-weight="700">Node C</text><text x="135" y="108" text-anchor="middle" fill="#8ed8a9" font-size="24">downloads from B</text><text x="135" y="158" text-anchor="middle" fill="#aeb8b0" font-size="21">still verifies A</text></g>
+    <path d="M355 250 H485" stroke="#83c8d4" stroke-width="5" stroke-dasharray="13 11"/><path d="M465 238 L485 250 465 262" fill="none" stroke="#83c8d4" stroke-width="5"/>
+    <path d="M790 250 H920" stroke="#83c8d4" stroke-width="5" stroke-dasharray="13 11"/><path d="M900 238 L920 250 900 262" fill="none" stroke="#83c8d4" stroke-width="5"/>
+    <text x="640" y="447" text-anchor="middle" fill="#f5f7f4" font-size="29" font-weight="700">A signs → B acquires → A stops → C acquires from B → C verifies A</text>
+    <text x="640" y="500" text-anchor="middle" fill="#aeb8b0" font-size="20">Proof points: A's key ID remains trusted at C · full SHA-256 matches · content bytes compare equal</text>
+  </g>
+</svg>

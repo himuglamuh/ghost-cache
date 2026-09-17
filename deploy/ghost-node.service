@@ -1,0 +1,24 @@
+[Unit]
+Description=Ghost Cache Node
+After=local-fs.target
+
+[Service]
+Type=simple
+User=ghostcache
+Group=ghostcache
+ExecStart=/usr/local/bin/ghost-node run --config /etc/ghostcache/config.toml
+Restart=on-failure
+RestartSec=5
+RuntimeDirectory=ghostcache
+RuntimeDirectoryMode=0750
+StandardOutput=journal
+StandardError=journal
+LogNamespace=ghostcache
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/ghostcache
+
+[Install]
+WantedBy=multi-user.target

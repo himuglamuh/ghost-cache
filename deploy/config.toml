@@ -1,0 +1,20 @@
+[node]
+data_dir = "/var/lib/ghostcache"
+
+[radio]
+device = "/dev/serial/by-id/REPLACE_WITH_MODEM"
+frequency_mhz = 915.0
+spreading_factor = 7
+bandwidth_khz = 125.0
+coding_rate = 5
+tx_power_dbm = 5
+preamble = 8
+sync_word = 0x12
+
+[discovery]
+advertise_interval = "10m"
+startup_backoff = "5s"
+
+[acquisition]
+# max_auto_size = "128KiB"
+signature_policy = "permissive"

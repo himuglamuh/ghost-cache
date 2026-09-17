@@ -1,0 +1,30 @@
+name: Feature request
+description: Propose a focused product or protocol improvement
+title: "feature: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the operator or interoperability problem before proposing a solution.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: airtime
+    attributes:
+      label: RF airtime and compatibility impact
+      description: Explain packet cost, half-duplex behavior, persistence changes, and wire compatibility where applicable.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered

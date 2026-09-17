@@ -1,0 +1,51 @@
+name: Bug report
+description: Report a reproducible Ghost Cache defect
+title: "bug: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not report security vulnerabilities here. Follow `SECURITY.md` instead.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - ghost-node
+        - ghost-radio
+        - modem firmware
+        - configuration
+        - service installation
+        - documentation
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include OS, architecture, hardware, firmware tag or commit, and host software version or commit.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest repeatable sequence, with private paths or keys removed.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and volatile logs
+      description: Never attach signing private keys or an unredacted production data directory.
+    validations:
+      required: true

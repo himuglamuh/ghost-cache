@@ -1,0 +1,16 @@
+{
+  "name": "ghost-cache-presentation",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "marp --html --theme theme.css --output ghost-cache.html ghost-cache.md",
+    "pdf": "marp --html --theme theme.css --pdf --allow-local-files --output ghost-cache.pdf ghost-cache.md",
+    "serve": "marp --html --theme theme.css --server ."
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "4.5.1"
+  },
+  "overrides": {
+    "@xmldom/xmldom": "0.9.12"
+  }
+}

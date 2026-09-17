@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="576" viewBox="0 0 1280 576">
+  <rect width="1280" height="576" fill="#0b120f"/>
+  <text x="640" y="58" text-anchor="middle" fill="#8ed8a9" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="3">POLICY + RESUME DEMO</text>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <g transform="translate(40 130)"><circle cx="80" cy="80" r="70" fill="#18231f" stroke="#f4c56c" stroke-width="3"/><text x="80" y="74" fill="#f5f7f4" font-size="23" font-weight="700">policy</text><text x="80" y="105" fill="#f4c56c" font-size="20">defers</text></g>
+    <g transform="translate(245 130)"><circle cx="80" cy="80" r="70" fill="#18231f" stroke="#83c8d4" stroke-width="3"/><text x="80" y="74" fill="#f5f7f4" font-size="23" font-weight="700">library</text><text x="80" y="105" fill="#83c8d4" font-size="20">shows it</text></g>
+    <g transform="translate(450 130)"><circle cx="80" cy="80" r="70" fill="#18231f" stroke="#8ed8a9" stroke-width="3"/><text x="80" y="74" fill="#f5f7f4" font-size="23" font-weight="700">want</text><text x="80" y="105" fill="#8ed8a9" font-size="20">live approve</text></g>
+    <g transform="translate(655 130)"><circle cx="80" cy="80" r="70" fill="#18231f" stroke="#8ed8a9" stroke-width="3"/><text x="80" y="74" fill="#f5f7f4" font-size="23" font-weight="700">transfer</text><text x="80" y="105" fill="#8ed8a9" font-size="20">begins</text></g>
+    <g transform="translate(860 130)"><circle cx="80" cy="80" r="70" fill="#18231f" stroke="#ef8e88" stroke-width="3"/><text x="80" y="74" fill="#f5f7f4" font-size="23" font-weight="700">stop</text><text x="80" y="105" fill="#ef8e88" font-size="20">mid-transfer</text></g>
+    <g transform="translate(1065 130)"><circle cx="80" cy="80" r="70" fill="#18231f" stroke="#8ed8a9" stroke-width="3"/><text x="80" y="74" fill="#f5f7f4" font-size="23" font-weight="700">restart</text><text x="80" y="105" fill="#8ed8a9" font-size="20">resume + verify</text></g>
+    <g stroke="#3a5047" stroke-width="4"><path d="M195 210 H225"/><path d="M400 210 H430"/><path d="M605 210 H635"/><path d="M810 210 H840"/><path d="M1015 210 H1045"/></g>
+    <text x="640" y="405" fill="#f5f7f4" font-size="29" font-weight="700">defer → inspect → approve live → interrupt → resume from durable chunks</text>
+    <text x="640" y="462" fill="#aeb8b0" font-size="21">The final SHA-256 must still match. A want never accepts corrupt content.</text>
+    <text x="640" y="510" fill="#aeb8b0" font-size="18">Proof points: partial chunk state survives · restart requests only missing chunks · final SHA-256 matches</text>
+  </g>
+</svg>

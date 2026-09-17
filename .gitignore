@@ -1,0 +1,33 @@
+# PlatformIO
+.pio/
+**/.pio/
+
+# Go build artifacts
+/ghost-radio
+/ghost-publish
+/ghost-broadcast
+/ghost-node
+*.test
+coverage.out
+
+# Runtime transfer state and content
+/data/
+*.part
+/demo
+
+# Logs
+*.log
+
+# Editors and operating systems
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+/presentation/node_modules/
+
+# Python helper scripts
+__pycache__/
+*.py[cod]
